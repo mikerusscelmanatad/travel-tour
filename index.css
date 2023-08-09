@@ -13,7 +13,7 @@
   font-family:Arial, Helvetica, sans-serif;
   color:rgb(234, 230, 230);
   margin-top: 10% ;
-  margin-left: 5%;
+  margin-left: 2%;
   display: flex;
   float:left;
   font-size:  500%;
@@ -24,16 +24,15 @@
   margin-top: 10% ;
   margin-left: 5%;
   float:left;
-  font-size:  20px;
+  font-size:  15px;
 
 }
 .book {
   border: none;
   opacity: 50%;
-  color: aqua;
   padding: 10px;
   margin-top: 10px;
-  margin-left:25% ;
+  margin-left:35% ;
   margin-bottom: 5px;
   border-radius: 20px;
   float: left;
@@ -50,7 +49,7 @@
 
 
 .header{
-    min-height: 100vh;
+    min-height: 80vh;
     max-width: 100%;
     background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/bali.jpeg);
     background-position: center;
@@ -63,15 +62,13 @@
     position: relative;
     padding: 5px;
     border-style:outset;
-    margin-right: 10%;
-    margin-top: 25px;
+    margin-right: 5%;
+    margin-top: 27px;
     margin-bottom: 5px;
     border-radius: 20px;
     float: right;
     
 }
-
-
 
  .button:hover {
     color: white;
@@ -82,6 +79,7 @@
  .button a:hover{
   color: white;
  }
+
  
 
 ul {
@@ -95,7 +93,7 @@ ul {
   li {
     padding: 5px;
     position: relative;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 10px;
     float: left;
 
@@ -104,9 +102,7 @@ ul {
   li a {
     position: relative;
     color: rgb(0, 0, 0);
-  
     text-align: center;
-    margin-left: 100%;
     padding: 15px 16px;
     text-decoration: none;
   }
@@ -146,15 +142,18 @@ ul {
   .img1 {
     border: 1px solid black;
     position: relative;
+    width: 400px;
 
   }
   .img2 {
     border: 1px solid black;
     position: relative;
+    width: 400px;
   }
   .img3{
     border: 1px solid black;
     position: relative;
+    width: 400px;
   }
 
   .paragraph_1  {
@@ -181,16 +180,16 @@ ul {
   }
 
   .intro_section .pictures {
-    display: flex;
-    justify-content: center;
-    flex-wrap:unset;
-    image-resolution:unset; 
+    display: block;
+    margin-left: 15%;
+    
   }
 
   .pictures img {
     position: inherit;
-    width: 338px;
-    height: 600px;
+    object-fit: fill;
+    width: 400px;
+    height: 447px;
   }
 
   .pictures {
@@ -204,11 +203,7 @@ ul {
   }
 
   .accomodation_section .pictures_accomo {
-    display: flex;
-    justify-content: center;
-    gap: 2%;
-    flex-wrap:unset;
-  
+    margin-left: 15%;
 
   }
 
@@ -254,13 +249,14 @@ ul {
 
     }
     #img_green {
-      width: 400px;
-      height: 600px;
+      width: 337px;
+      height: 447px;
       border: 1px solid black;
       overflow: hidden;
+      object-fit: fill;
     }
     #img_airport {
-      width: 800px;
+      width: 400px;
       border: 1px solid black;
       overflow: hidden;
     }
@@ -279,30 +275,23 @@ ul {
     }
 
     .title_experience {
+      margin-top: 2%;
       padding-left: 2em;
-      display: inline-flex;
+      
 
     }
     .paragraph_bali {
-      margin-right: 50%;
       max-width: 100%;
-      position: absolute;
-      padding-top: 5%;
       margin-top: 5em;
-      overflow:unset;
-      margin-left: 15em;
+      margin-left: 3%;
+      margin-right: 3%;
     }
 
     .img_exp{ 
-      border: 1px solid black;
+    
       max-width: 100%;
-      float: right;
-      margin-left: 40%;
-      margin-right: 10em;
       margin-bottom: 3em;
-      margin-top: 0;
-      display:flex;
-      position:relative;
+      margin-top: 10px;
 
     }
 
@@ -314,22 +303,37 @@ ul {
       
     }
 
-    .pic {
-      gap: 5px;;
-    }
-    
-    .row_exp {
-      min-height: 100vh;
-      margin-left: 20em;
-      display: inline-flex;
-      position: relative;
-    }
-    
+    @media only screen and (min-width: 600px) {
+      .Info {
+        font-size: 20px;
+      }
 
-  @media screen and (min-width: 500px){
-    .pictures { 
-      width: 100%;
+      .intro_section .pictures {
+        display: flex;
+        margin-left: 15%;
+        align-items: center;
+      }
 
+      .accomodation_section .pictures_accomo {
+        display:-webkit-inline-box;
+        margin-left: 15%;
+      }
+
+      .paragraph_bali {
+        margin-left: 25%;
+        font-size: large;
+      }
+
+      .img_exp {
+        margin-left: 25%;
+      }
+
+      .row_exp{
+        width: 330px;
+        height: auto;
+        display: inline-flex;
+        margin-left: 25%;
+      }
     }
 
-  }
+  
