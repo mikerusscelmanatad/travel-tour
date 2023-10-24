@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Bali Indonesia">
         <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <title> Bali Indonesia</title>
 
     </head>    
@@ -18,18 +20,23 @@
                     <li><a href="#experiences">Experiences</a></li>
                     <li><a href="#activities">Activities</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <button class="button"><a href="#Contact">Contact</a></button>
+                    <button class="btn btn-secondary mt-3" id ="button"><a href="#Contact">Contact</a></button>
                 </ul>
             </div>
-            <div class="container1">
-                <div class="Greetings">
-                    Visit Bali Today!          
-                </div>    
+            <div class="container-fluid">
+                <div class="video-container">   
+                    <video autoplay loop muted poster="bali.jpeg">
+                        <source src="videos/droneshotbali.mp4" type="video/mp4">
+                    </video>
+                </div> 
+                <h1 class="greetings">
+                    Visit Bali Today!       </h1>   
                 <div class="Info">
-                    Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. 
+                    <p> Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands. 
                     <br>East of Java and west of Lombok, the province includes the island of Bali and a few smaller 
-                    <br> neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan to the southeast.<br>
-                    <button class="book"><a href="#Book">BOOK NOW</a></button>
+                    <br> neighbouring islands, notably Nusa Penida, Nusa Lembongan, and Nusa Ceningan to the southeast. </p>
+                    <br>
+                    <button class="btn btn-secondary mt-3" id="book"><a href="#Book">BOOK NOW</a></button>
                 </div>
             </div>
         </section><br>
@@ -37,7 +44,7 @@
         <hr>
         
         <section class="intro_section">
-            <div class="container_intro">
+            <div class="container-intro">
                 <h2 class="introduction">Introduction:  </h2>
                 <h1 class="title">
                     FIND THE HIDDEN GEM OF THE MAGICAL OCEAN IN BALI.
@@ -96,7 +103,7 @@
                     NEW EXPERIENCE THAT YOU <br>
                     NEVER HAD.
                 </h1> <br>
-                        <p class="paragraph_bali">Bali also offers plenty for adventure-seekers. <br>
+                        <p>Bali also offers plenty for adventure-seekers. <br>
                         From white water rafting, diving, volcano hiking, jungle trekking, water sports, cycling, and much more.</p>
                     <div class="img_exp">
                         <img src="images/indo.jfif" alt="beach" width="600px" height="300px" />
@@ -116,7 +123,9 @@
                         
             </div>
         </section>
-
+        <footer> 
+            Created by: Mike Russscel Manatad 2020
+        </footer>  
     </body>
 
 </html>
