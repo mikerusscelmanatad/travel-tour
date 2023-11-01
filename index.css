@@ -380,3 +380,51 @@ li a:hover {
       margin-top: 5%;
       margin-right: 5%;
     }
+
+    @media screen and (max-width: 480px){
+        .row_exp{
+          margin-left: 4em;
+          display: inline;
+        }
+
+        .img_exp {
+          width:auto;
+          margin-left: 5px;
+        }
+
+        .pictures_accomo{
+          display: inline;
+          padding-top: 4px  ;
+          gap: 5px;
+        }
+
+        .container-intro .pictures {
+        display:flex;
+        flex-direction: column;
+        margin-left: 3em;
+        }
+
+        .Info p {
+        font-size: 15px;
+        margin-top: 1em;
+        }
+
+        .Info {
+
+          margin-top: 10px;
+          
+        }
+
+        .navigator {
+          min-width: 10%;
+          min-height: 20px;
+        }
+
+        .container-fluid {
+          z-index:auto;
+          height: 40em;
+          width:10em ;
+          justify-content: center;
+        }
+
+    }
