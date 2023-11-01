@@ -388,8 +388,18 @@ li a:hover {
         }
 
         .img_exp {
-          width:auto;
-          margin-left: 5px;
+          height: 50%;
+          width: 50px;;
+          margin-left: 0px;
+        }
+
+        .container_experience h2 {
+          margin-left: 3em;
+        }
+        .experience {
+          padding-top: 5%;
+          margin-left: 1em;
+          display: inline-flex;
         }
 
         .pictures_accomo{
